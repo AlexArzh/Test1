@@ -155,6 +155,7 @@ body {
   aspect-ratio: 1 / 1;
   overflow: hidden;
   margin: 30px;
+  margin-bottom: 0;
 }
 
 .hero-img {
