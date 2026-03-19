@@ -141,6 +141,275 @@ body {
 
 
 
+
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  pointer-events: none;
+}
+
+.arrow-nav {
+  position: absolute;
+  bottom: 33%;
+  left: 5%;
+  display: flex;
+  gap: 20px;
+  pointer-events: none;
+}
+
+.arrow-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.arrow {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 1;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+
+.arrow-circle:hover {
+  background: #ffffff;
+}
+
+.arrow-circle:hover .arrow {
+  color: #000000;
+}
+
+.overlap-card {
+  max-width: 1200px;
+  margin: -40px auto 0;
+  padding: 0 0.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.card-content {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 4rem 2rem 4rem 2.5rem;
+  box-shadow: 0 30px 40px -12px rgba(0, 0, 0, 0.3),
+              0 10px 20px -8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #f0f0f5;
+}
+
+.inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.left-text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.services-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.decorative-circle {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: rgba(249, 169, 90, 0.15);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.decorative-circle::before,
+.decorative-circle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f9a95a;
+  border-radius: 2px;
+}
+
+.decorative-circle::before {
+  width: 60%;
+  height: 2px;
+  top: 35%;
+}
+
+.decorative-circle::after {
+  width: 40%;
+  height: 2px;
+  top: 55%;
+}
+
+.services-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #f9a95a;
+  line-height: 1.2;
+}
+
+.title-large {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e1e2f;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+.btn-large {
+  display: inline-block;
+  align-self: flex-start;
+  background: #ff8c00;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 12px 22px -8px rgba(255, 140, 0, 0.5);
+  transition: background 0.2s;
+  white-space: nowrap;
+  margin-top: auto;
+}
+
+.btn-large:hover {
+  background: #e07b00;
+}
+
+.square-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+  border-radius: 24px;
+  box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.square.orange {
+  background-color: #ff8c00;
+}
+
+.square.white {
+  background-color: #ffffff;
+}
+
+.square-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.square-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: inherit;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.square.orange .square-text {
+  color: #ffffff;
+}
+
+.square.white .square-text {
+  color: #1e1e2f;
+}
+
+.square.orange .square-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+
+.square.orange .square-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #1e1e2f;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.8rem;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease, color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.square.orange .square-btn:hover {
+  background: #1e1e2f;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
 .footer {
     background-color: #000000; 
     color: #fff;
