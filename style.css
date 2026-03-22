@@ -208,6 +208,7 @@ body {
   line-height: 1;
   user-select: none;
   transition: color 0.2s ease;
+  margin-top: -8px;
 }
 
 .arrow-circle:hover {
