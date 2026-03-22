@@ -275,15 +275,15 @@ body {
 }
 
 .decorative-circle::before {
-  width: 60%;
-  height: 2px;
-  top: 35%;
+  width: 65%;
+  height: 3px;
+  top: 40%;
 }
 
 .decorative-circle::after {
-  width: 40%;
-  height: 2px;
-  top: 55%;
+  width: 45%;
+  height: 3px;
+  top: 60%;
 }
 
 .services-text {
