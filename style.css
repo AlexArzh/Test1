@@ -157,7 +157,7 @@ body {
 }
 
 .hero-img {
-  width: 100%;
+  width: 1200px;
   height: 100%;
   object-fit: cover;
   display: block;
@@ -182,7 +182,7 @@ body {
 
 .arrow-nav {
   position: absolute;
-  bottom: 23%;
+  bottom: 33%;
   left: 8.9%;
   display: flex;
   gap: 20px;
@@ -225,6 +225,7 @@ body {
   padding: 0 0.5rem;
   position: relative;
   z-index: 2;
+  margin-top: -60px;
 }
 
 .card-content {
